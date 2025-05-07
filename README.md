@@ -1,4 +1,4 @@
-Laboratorio 5
+# **Laboratorio 5**
 
 ## Instrucciones Generales
 - El archivo **debe** llamarse **Laboratorio5.py**
@@ -20,11 +20,21 @@ matriz2 = [ ['A',1,0], [0,'B',0], ['F','F',1], ['A','B',5], [2,'C',9]]
 ```
 
 ## matrizDiagonalInversa(matriz).
-Escriba una función llamada matrizDiagonalInversa que reciba como parámetro de entrada una matriz cuadrada y que retorne como vector la diagonal inversa de la matriz. Evitar funciones built-in.
+Esta función recibe como parámetro de entrada una **matriz cuadrada** y que retorne un **vector** la diagonal inversa de la matriz. Evitar funciones built-in.
 
 ```python
 >>> matrizDiagonalInversa( [[0,0,1,0], [0,0,1,0], [0,0,1,0], [0,0,1,0]])
 [0, 0, 1, 0]
 >>> matrizDiagonalInversa( [[0,0,1], [0,1,0], [0,0,0]])
-[0, 1, 0]
+[0, 1, 1]
+```
+## encontrarNumerosDivisibles(matriz, num)
+
+Escriba una función **encontrarNumerosDivisibles(matriz, num)**. Esta función recibe una **matriz** de tamaño mxn, consiste en hacer el recorrido columna por columna, si en dicho recorrido se encuentra un número que es divisible por el parámetro **num** **NO** modificar dicho número, de lo contrario sustituirlo por **CERO**. La función debe comportarse de la siguiente manera:
+
+```python
+m = [[1,5,3,7],[2,43,6,8],[11,23,3,4],[7,8,9,10]]
+
+>>>encontrarNumerosDivisibles(m, 2) 
+[[0,0,0,0],[2,0,6,8],[0,0,0,4],[0,8,0,10]]
 ```
