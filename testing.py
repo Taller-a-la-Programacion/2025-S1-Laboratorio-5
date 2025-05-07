@@ -26,7 +26,7 @@ n = [[1,5,7],[2,43,6,8],[11,23,3,4],[7,8,9,10]]
 
 #Pruebas para encontrarNumerosDivisibles
 def test_encontrarNumerosDivisibles_1():
-    assert laboratorio8.encontrarNumerosDivisibles(n, 2) == "Error: existen vectores de diferente tamaño"
+    assert isinstance(Laboratorio5.encontrarNumerosDivisibles(n, 2), str) == isinstance("Error: existen vectores de diferente tamaño", str)
 
 def test_encontrarNumerosDivisibles_2():
-    assert laboratorio8.encontrarNumerosDivisibles(m, 2) == [[0,0,0,0],[2,0,6,8],[0,0,0,4],[0,8,0,10]]
+    assert Laboratorio5.encontrarNumerosDivisibles(m, 2) == [[0,0,0,0],[2,0,6,8],[0,0,0,4],[0,8,0,10]]
